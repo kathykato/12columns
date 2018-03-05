@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
+
+$purple: #7067c6;
+$black: #1b2024;
+$yellow: #ffeec9;
+$white: #fff;
+$text: #75757c;
+$dark-grey: #56565e;
+$grid-border: #c0c9e4;
+$grid-bg: #fafbfe;
+$footer-bg: #f1f2fb;
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+q {
+  &:before, &:after {
+    content: '';
+    content: none;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::-moz-selection {
+  color: $black;
+  background: $yellow;
+  text-shadow: none;
+}
+
+::selection {
+  color: $black;
+  background: $yellow;
+  text-shadow: none;
+}
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.125rem;
+  color: $text;
+  background: $white;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  display: grid;
+  grid-template-areas: "header header header header header header header header header header header header" "main main main main main main main main main main main main" "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+
+header, footer {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+header {
+  grid-area: header;
+  background: $purple;
+  background: -webkit-linear-gradient(45deg, #7067c6, #9fc9ff);
+  background: -o-linear-gradient(45deg, #7067c6, #9fc9ff);
+  background: linear-gradient(45deg, #7067c6, #9fc9ff);
+}
+
+main {
+  grid-area: main;
+  padding: 2rem 0;
+}
+
+section {
+  margin-bottom: 4rem;
+}
+
+footer {
+  grid-area: footer;
+  background: $footer-bg;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+  cursor: pointer;
+}
+
+.link {
+  font-weight: 600;
+  color: $black;
+  border-bottom: 0.1rem solid $purple;
+  -webkit-transition: color 0.15s ease-out;
+  -o-transition: color 0.15s ease-out;
+  transition: color 0.15s ease-out;
+  &:hover {
+    color: $purple;
+  }
+}
+
+h1, h2, h3 {
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+h1 {
+  margin-bottom: 1.25rem;
+  font-size: 2.375rem;
+  color: $white;
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 1.625rem;
+  color: rgba(231, 230, 255, 0.85);
+}
+
+h3 {
+  margin: 2rem 0;
+  font-size: 1.5rem;
+  color: $black;
+}
+
+.download {
+  padding: 1rem 1.5rem;
+  font-size: inherit;
+  font-weight: 600;
+  line-height: 1.5;
+  color: $white;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: 0;
+  border: 0.0625rem solid $white;
+  border-radius: 0.5rem;
+  background: transparent;
+  cursor: pointer;
+  -webkit-transition: all .22s;
+  -o-transition: all .22s;
+  transition: all .22s;
+  &:hover {
+    color: $purple;
+    background: $white;
+    border: 0.0625rem solid $white;
+  }
+}
+
+main .grid > [class*="column-"] {
+  text-align: center;
+  padding: 1rem;
+  border: 0.0625rem solid $grid-border;
+  background: $grid-bg;
+}
+
+pre {
+  display: block;
+  margin: 1.875rem 0;
+  color: $white;
+  overflow: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  background: $dark-grey;
+  > code {
+    border: none;
+  }
+}
+
+code {
+  font-family: Courier New, Courier, monospace;
+  display: block;
+  padding: 1rem;
+}
