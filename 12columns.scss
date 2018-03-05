@@ -1,0 +1,129 @@
+/* 12columns.css
+Created by Katherine Kato
+Released under the MIT license */
+
+$grid-columns: 12;
+
+$sm: 48rem;
+$md: 62rem;
+$lg: 75rem;
+
+.container {
+  margin: auto;
+  padding: 0 1rem;
+  max-width: 71.25rem;
+  width: 100%;
+}
+
+/* Grid (Flexbox) */
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-flow: row wrap;
+  flex-flow: row wrap;
+  > [class*="column-"] {
+    display: block;
+  }
+}
+
+.first {
+  -webkit-box-ordinal-group: 0;
+  -ms-flex-order: -1;
+  order: -1;
+}
+
+.last {
+  -webkit-box-ordinal-group: 13;
+  -ms-flex-order: 12;
+  order: 12;
+}
+
+@for $i from 1 through $grid-columns {
+  .column-xs-#{$i} {
+    -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
+    flex-basis: calc(#{$i / 12 * 100%});
+    max-width: calc(#{$i / 12 * 100%});
+  }
+}
+
+@media (min-width: $sm) {
+  @for $i from 1 through $grid-columns {
+    .column-sm-#{$i} {
+      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
+      flex-basis: calc(#{$i / 12 * 100%});
+      max-width: calc(#{$i / 12 * 100%});
+    }
+  }
+}
+
+@media (min-width: $md) {
+  @for $i from 1 through $grid-columns {
+    .column-md-#{$i} {
+      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
+      flex-basis: calc(#{$i / 12 * 100%});
+      max-width: calc(#{$i / 12 * 100%});
+    }
+  }
+}
+
+@media (min-width: $lg) {
+  @for $i from 1 through $grid-columns {
+    .column-lg-#{$i} {
+      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
+      flex-basis: calc(#{$i / 12 * 100%});
+      max-width: calc(#{$i / 12 * 100%});
+    }
+  }
+}
+
+/* Grid (CSS Grid Layout */
+@supports (display: grid) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+    > [class*="column-"] {
+      margin: 0;
+      max-width: 100%;
+    }
+  }
+
+  @for $i from 1 through $grid-columns {
+    .column-xs-#{$i} {
+      grid-column-start: span #{$i};
+      grid-column-end: span #{$i};
+    }
+  }
+
+  @media(min-width: $sm) {
+    @for $i from 1 through $grid-columns {
+      .column-sm-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
+  }
+
+  @media(min-width: $md) {
+    @for $i from 1 through $grid-columns {
+      .column-md-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
+  }
+
+  @media(min-width: $lg) {
+    @for $i from 1 through $grid-columns {
+      .column-lg-#{$i} {
+        grid-column-start: span #{$i};
+        grid-column-end: span #{$i};
+      }
+    }
+  }
+}
