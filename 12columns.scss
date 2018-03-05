@@ -43,6 +43,24 @@ $lg: 75rem;
   order: 12;
 }
 
+.align-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+.align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.align-bottom {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end;
+}
+
 @for $i from 1 through $grid-columns {
   .column-xs-#{$i} {
     -ms-flex-preferred-size: calc(#{$i / 12 * 100%});

@@ -31,6 +31,21 @@ Released under the MIT license */
   -ms-flex-order: 12;
   order: 12; }
 
+.align-top {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start; }
+
+.align-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.align-bottom {
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: end; }
+
 .column-xs-1 {
   -ms-flex-preferred-size: calc(8.33333%);
   flex-basis: calc(8.33333%);
