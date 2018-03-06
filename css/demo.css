@@ -47,8 +47,6 @@ table {
     box-sizing: border-box; }
 
 body {
-  margin: 0;
-  padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 1.125rem;
   color: #75757c;
@@ -104,7 +102,8 @@ h1, h2, h3 {
 
 h1 {
   margin-bottom: 1.25rem;
-  font-size: 2.375rem;
+  font-size: 2.125rem;
+  font-weight: 600;
   color: #fff; }
 
 h2 {
@@ -113,7 +112,7 @@ h2 {
   color: rgba(231, 230, 255, 0.85); }
 
 h3 {
-  margin: 2rem 0;
+  margin: 2rem 0 1.25rem 0;
   font-size: 1.5rem;
   color: #1b2024; }
 
@@ -158,16 +157,14 @@ pre {
   word-wrap: break-word;
   background: #56565e; }
   pre > code {
+    display: block;
+    padding: 1rem;
     border: none; }
 
 code {
-  display: block;
-  padding: 1rem; }
+  font-family: Courier New, Courier, monospace; }
 
-span {
+p code {
   color: #7067c6;
   font-weight: 600;
   background: #f1f2fb; }
-
-code, span {
-  font-family: Courier New, Courier, monospace; }

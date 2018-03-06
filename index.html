@@ -45,14 +45,14 @@
   <div class="container">
     <section class="syntax-section">
       <h3 class="section-heading">Syntax</h3>
-      <p class="content">This grid system uses a 12-column grid and is fully responsive. Columns are wrapped within a <span>grid</span> class.</p>
-      <pre><code>&lt;div class=&#34;grid&#34;>
+      <p class="content">This grid system uses a 12-column grid and is fully responsive. Columns are wrapped within a <code>grid</code> class.</p>
+      <pre class="highlight"><code>&lt;div class=&#34;grid&#34;>
   &lt;div class=&#34;column-xs-12 column-md-12&#34;>1&lt;/div>
 &lt;/div></code></pre>
     </section>
     <section class="grid-section">
       <h3 class="heading">Grid</h3>
-      <p class="content">Use <span>column-xs-*</span>, <span>column-sm-*</span>, <span>column-md-*</span>, or <span>column-lg-*</span> classes with values 1 through 12 to indicate the number of columns. By default, all columns are the same height.</p>
+      <p class="content">Use <code>column-xs-*</code>, <code>column-sm-*</code>, <code>column-md-*</code>, or <code>column-lg-*</code> classes with values 1 through 12 to indicate the number of columns. By default, all columns are the same height.</p>
       <div class="grid">
         <div class="column-xs-12 column-md-1">1</div>
         <div class="column-xs-12 column-md-1">1</div>
@@ -95,7 +95,7 @@
         <div class="column-xs-12 column-md-1">1</div>
         <div class="column-xs-12 column-md-12">12</div>
       </div>
-      <pre><code>&lt;div class=&#34;grid&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid&#34;>
   &lt;div class=&#34;column-xs-12 column-md-1&#34;>1&lt;/div>
   ...
   &lt;div class=&#34;column-xs-12 column-md-12&#34;>12&lt;/div>
@@ -103,7 +103,7 @@
     </section>
     <section class="nesting-section">
       <h3 class="section-heading">Nesting</h3>
-      <p class="content"><span>grid</span> within a <span>grid</span>.</p>
+      <p class="content"><code>grid</code> within a <code>grid</code>.</p>
       <div class="grid">
         <div class="column-xs-12 column-md-6">column-md-6
           <div class="grid">
@@ -120,7 +120,7 @@
           </div>
         </div>
       </div>
-      <pre><code>&lt;div class=&#34;grid&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid&#34;>
   &lt;div class=&#34;column-xs-12 column-md-6&#34;>column-md-6
     &lt;div class=&#34;grid&#34;>
       &lt;div class=&#34;column-xs-12 column-md-4&#34;>column-md-4&lt;/div>
@@ -133,14 +133,14 @@
     </section>
     <section class="order-section">
       <h3 class="section-heading">Order</h3>
-      <p class="content">Reorder columns by adding <span>first</span> and <span>last</span>.</p>
+      <p class="content">Reorder columns by adding <code>first</code> and <code>last</code>.</p>
       <div class="grid">
         <div class="column-xs-12 column-md-3">1</div>
         <div class="column-xs-12 column-md-3 first">2</div>
         <div class="column-xs-12 column-md-3 last">3</div>
         <div class="column-xs-12 column-md-3">4</div>
       </div>
-      <pre><code>&lt;div class=&#34;grid&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid&#34;>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>1&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3 first&#34;>2&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3 last&#34;>3&lt;/div>
@@ -149,14 +149,14 @@
     </section>
     <section class="align-top-section">
       <h3 class="section-heading">Top Alignment</h3>
-      <p class="content">Vertically align columns at the top with <span>align-top</span>.</p>
+      <p class="content">Vertically align columns at the top with <code>align-top</code>.</p>
       <div class="grid align-top">
         <div class="column-xs-12 column-md-3">This column in the grid is aligned at the top.</div>
         <div class="column-xs-12 column-md-3">2</div>
         <div class="column-xs-12 column-md-3">3</div>
         <div class="column-xs-12 column-md-3">4</div>
       </div>
-      <pre><code>&lt;div class=&#34;grid align-top&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid align-top&#34;>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>This column in the grid is aligned at the top.&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>2&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>3&lt;/div>
@@ -165,14 +165,14 @@
     </section>
     <section class="align-center-section">
       <h3 class="section-heading">Center Alignment</h3>
-      <p class="content">Vertically align columns at the center with <span>align-center</span>.</p>
+      <p class="content">Vertically align columns at the center with <code>align-center</code>.</p>
       <div class="grid align-center">
         <div class="column-xs-12 column-md-3">1</div>
         <div class="column-xs-12 column-md-3">This column in the grid is aligned at the center.</div>
         <div class="column-xs-12 column-md-3">This column in the grid is aligned at the center.</div>
         <div class="column-xs-12 column-md-3">4</div>
       </div>
-      <pre><code>&lt;div class=&#34;grid align-center&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid align-center&#34;>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>1&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>This column in the grid is aligned at the center.&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>This column in the grid is aligned at the center.&lt;/div>
@@ -181,14 +181,14 @@
     </section>
     <section class="align-bottom-section">
       <h3 class="section-heading">Bottom Alignment</h3>
-      <p class="content">Vertically align columns at the bottom with <span>align-bottom</span>.</p>
+      <p class="content">Vertically align columns at the bottom with <code>align-bottom</code>.</p>
       <div class="grid align-bottom">
         <div class="column-xs-12 column-md-3">1</div>
         <div class="column-xs-12 column-md-3">2</div>
         <div class="column-xs-12 column-md-3">3</div>
         <div class="column-xs-12 column-md-3">This column in the grid is aligned at the bottom.</div>
       </div>
-      <pre><code>&lt;div class=&#34;grid align-bottom&#34;>
+      <pre class="highlight"><code>&lt;div class=&#34;grid align-bottom&#34;>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>1&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>2&lt;/div>
   &lt;div class=&#34;column-xs-12 column-md-3&#34;>3&lt;/div>
@@ -202,7 +202,7 @@
   <div class="container">
     <div class="grid">
       <div class="column-xs-12">
-        <p>Released under the <a class="link" href="https://opensource.org/licenses/MIT" title="MIT license" rel="noopener noreferrer">MIT license</a>. Developed by <a class="link" href="http://katherinekato.com" title="Katherine Kato" rel="noopener noreferrer">Katherine Kato</a>.</p>
+        <p>Built by <a class="link" href="http://katherinekato.com" title="Katherine Kato">Katherine Kato</a>. View on <a class="link" href="https://github.com/kathykato/12columns" title="GitHub">GitHub</a>.</p>
       </div>
     </div>
   </div>
