@@ -146,6 +146,9 @@ main .grid > [class*="column-"] {
   border: 0.0625rem solid #c0c9e4;
   background: #fafbfe; }
 
+.content {
+  margin-bottom: 2rem; }
+
 pre {
   display: block;
   margin: 1.875rem 0;
@@ -158,6 +161,13 @@ pre {
     border: none; }
 
 code {
-  font-family: Courier New, Courier, monospace;
   display: block;
   padding: 1rem; }
+
+span {
+  color: #7067c6;
+  font-weight: 600;
+  background: #f1f2fb; }
+
+code, span {
+  font-family: Courier New, Courier, monospace; }

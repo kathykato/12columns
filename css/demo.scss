@@ -189,6 +189,10 @@ main .grid > [class*="column-"] {
   background: $grid-bg;
 }
 
+.content {
+  margin-bottom: 2rem;
+}
+
 pre {
   display: block;
   margin: 1.875rem 0;
@@ -203,7 +207,16 @@ pre {
 }
 
 code {
-  font-family: Courier New, Courier, monospace;
   display: block;
   padding: 1rem;
+}
+
+span {
+  color: $purple;
+  font-weight: 600;
+  background: $footer-bg;
+}
+
+code, span {
+  font-family: Courier New, Courier, monospace;
 }
