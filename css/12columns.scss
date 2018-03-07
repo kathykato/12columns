@@ -63,18 +63,18 @@ $lg: 75rem;
 
 @for $i from 1 through $grid-columns {
   .column-xs-#{$i} {
-    -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
-    flex-basis: calc(#{$i / 12 * 100%});
-    max-width: calc(#{$i / 12 * 100%});
+    -ms-flex-preferred-size: $i / $grid-columns * 100%;
+    flex-basis: $i / $grid-columns * 100%;
+    max-width: $i / $grid-columns * 100%;
   }
 }
 
 @media (min-width: $sm) {
   @for $i from 1 through $grid-columns {
     .column-sm-#{$i} {
-      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
-      flex-basis: calc(#{$i / 12 * 100%});
-      max-width: calc(#{$i / 12 * 100%});
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
     }
   }
 }
@@ -82,9 +82,9 @@ $lg: 75rem;
 @media (min-width: $md) {
   @for $i from 1 through $grid-columns {
     .column-md-#{$i} {
-      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
-      flex-basis: calc(#{$i / 12 * 100%});
-      max-width: calc(#{$i / 12 * 100%});
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
     }
   }
 }
@@ -92,9 +92,9 @@ $lg: 75rem;
 @media (min-width: $lg) {
   @for $i from 1 through $grid-columns {
     .column-lg-#{$i} {
-      -ms-flex-preferred-size: calc(#{$i / 12 * 100%});
-      flex-basis: calc(#{$i / 12 * 100%});
-      max-width: calc(#{$i / 12 * 100%});
+      -ms-flex-preferred-size: $i / $grid-columns * 100%;
+      flex-basis: $i / $grid-columns * 100%;
+      max-width: $i / $grid-columns * 100%;
     }
   }
 }
