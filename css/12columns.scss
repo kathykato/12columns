@@ -1,6 +1,4 @@
-/* 12columns.css
-Created by Katherine Kato
-Released under the MIT license */
+/* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 
 $grid-columns: 12;
 
@@ -15,7 +13,6 @@ $lg: 75rem;
   width: 100%;
 }
 
-/* Grid (Flexbox) */
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,7 +96,6 @@ $lg: 75rem;
   }
 }
 
-/* Grid (CSS Grid Layout */
 @supports (display: grid) {
   .grid {
     display: grid;

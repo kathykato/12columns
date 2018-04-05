@@ -1,13 +1,10 @@
-/* 12columns.css
-Created by Katherine Kato
-Released under the MIT license */
+/* 12columns.css | Created by Katherine Kato | Released under the MIT license */
 .container {
   margin: auto;
   padding: 0 1rem;
   max-width: 71.25rem;
   width: 100%; }
 
-/* Grid (Flexbox) */
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,7 +253,6 @@ Released under the MIT license */
     flex-basis: 100%;
     max-width: 100%; } }
 
-/* Grid (CSS Grid Layout */
 @supports (display: grid) {
   .grid {
     display: grid;
